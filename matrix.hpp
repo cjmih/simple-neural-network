@@ -56,7 +56,7 @@ namespace sp
         }
 
 
-        Matrix2D multiply(Matrix2D& target)
+        Matrix2D multiply(Matrix2D target)
         {
             assert(_cols == target._rows);
             Matrix2D output(target._cols, _rows);
@@ -84,7 +84,7 @@ namespace sp
         }
 
 
-        Matrix2D add(Matrix2D& target)
+        Matrix2D add(Matrix2D target)
         {
             assert(_rows == target._rows && _cols == target._cols);
             Matrix2D output(_cols, _rows);
